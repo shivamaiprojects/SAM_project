@@ -1,0 +1,39 @@
+# Data & model weights — never commit these
+data/
+outputs/
+checkpoints/
+external/
+*.pt
+*.pth
+*.ckpt
+*.mp4
+*.avi
+
+# Keep the folder placeholders
+!**/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.token
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scaffolding script (disposable)
+scaffold.py

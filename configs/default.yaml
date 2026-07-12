@@ -1,0 +1,39 @@
+# Central configuration. Code should NEVER hardcode a path or a threshold.
+
+project:
+  name: sam3-surgical-video-segmentation
+  seed: 42
+
+paths:
+  raw_data: data/raw/cholecseg8k
+  processed_data: data/processed
+  outputs: outputs
+  checkpoints: checkpoints
+
+device: cuda          # "cuda" | "cpu"; overridden automatically if no GPU
+
+model:
+  # Filled in properly in Module 2 once checkpoints are downloaded
+  repo_id: facebook/sam3
+  variant: sam3
+
+data:
+  clip_length: 80           # CholecSeg8k stores 80 consecutive frames per clip
+  frame_height: 480
+  frame_width: 854
+  fps: 10                   # for reconstructed video playback
+
+inference:
+  score_threshold: 0.5      # confidence cut-off for accepted detections
+  max_instances: 20
+
+prompts:
+  # Our first-pass text prompts. We will ablate these in Module 4.
+  grasper: "grasper"
+  liver: "liver"
+  gallbladder: "gallbladder"
+  fat: "fat"
+
+evaluation:
+  metrics: [iou, dice, precision, recall]
+  ignore_background: true
