@@ -20,6 +20,11 @@ dependencies = [
     "tqdm>=4.66",
     "imageio>=2.34",
     "imageio-ffmpeg>=0.4",
+    "numpy>=1.26,<2",
+    "opencv-python>=4.9,<4.11",
+    "scipy>=1.11,<1.16",
+    "python-dotenv>=1.0",
+    "kagglehub>=0.3",
 ]
 
 [project.optional-dependencies]
