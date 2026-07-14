@@ -53,7 +53,8 @@ class Sam3ImageSegmenter:
         key = id(image)
         if self._state_key == key:
             return
-        self._state = self.processor.set_image(Image.fromarray(image))
+        with torch.autocast(self.device, dtype=torch.bfloat16), torch.inference_mode():
+            self._state = self.processor.set_image(Image.fromarray(image))
         self._state_key = key
 
     def predict(self, image: np.ndarray, prompt: str) -> list[Detection]:
