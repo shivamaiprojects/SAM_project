@@ -56,7 +56,7 @@ class Sam3VideoTracker:
 
         self.device = device
         self.dtype = dtype
-        self.model = Sam3VideoModel.from_pretrained(model_id, device_map=device)
+        self.model = Sam3VideoModel.from_pretrained(model_id, dtype=dtype).to(device)
         self.processor = Sam3VideoProcessor.from_pretrained(model_id)
 
     def track(self, frames: list[np.ndarray], prompts: str | list[str],

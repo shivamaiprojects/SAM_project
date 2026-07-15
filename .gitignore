@@ -30,4 +30,5 @@ kaggle.json
 .DS_Store
 Thumbs.db
 
+scripts/colab_setup.ipynb
 scaffold.py
