@@ -55,8 +55,8 @@ Python · PyTorch · SAM 3 · OpenCV · NumPy · Hugging Face Hub · pytest
 ## Setup
 
 ```bash
-git clone https://github.com/shivamaiprojects/SAM_project.git
-cd SAM_project
+git clone https://github.com/shivamaiprojects/SAM3_surgical_tracking.git
+cd SAM3_surgical_tracking
 python -m venv .venv
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
 pip install -e ".[dev]"
