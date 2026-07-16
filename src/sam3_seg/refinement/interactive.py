@@ -54,9 +54,12 @@ class Sam3ClickRefiner:
             original_size=(height, width),
         )
 
+
         masks: dict[int, np.ndarray] = {}
         with torch.inference_mode():
-            for out in self.model.propagate_in_video_iterator(session):
+            for out in self.model.propagate_in_video_iterator(
+                session, start_frame_idx=clicked_frame
+            ):
                 m = self.processor.post_process_masks(
                     [out.pred_masks],
                     original_sizes=[[height, width]],
