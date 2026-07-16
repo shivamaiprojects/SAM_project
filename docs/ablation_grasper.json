@@ -1,0 +1,42 @@
+{
+  "grasper": {
+    "det_rate": 0.0,
+    "iou": 0.0,
+    "score": 0.0
+  },
+  "tool": {
+    "det_rate": 1.0,
+    "iou": 0.7896308009727293,
+    "score": 0.795458984375
+  },
+  "forceps": {
+    "det_rate": 1.0,
+    "iou": 0.8566581001428342,
+    "score": 0.806640625
+  },
+  "surgical instrument": {
+    "det_rate": 0.75,
+    "iou": 0.8102452594721677,
+    "score": 0.7665364583333333
+  },
+  "surgical tool": {
+    "det_rate": 0.75,
+    "iou": 0.8071209260445577,
+    "score": 0.7064453125
+  },
+  "clamp": {
+    "det_rate": 0.0,
+    "iou": 0.0,
+    "score": 0.0
+  },
+  "metal instrument": {
+    "det_rate": 0.15,
+    "iou": 0.950522129118351,
+    "score": 0.4401041666666667
+  },
+  "scissors": {
+    "det_rate": 0.875,
+    "iou": 0.8845183923895569,
+    "score": 0.6491629464285714
+  }
+}

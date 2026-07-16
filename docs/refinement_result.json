@@ -1,0 +1,12 @@
+{
+  "clip": "video25/video25_00162",
+  "frame": 2,
+  "click": [
+    494,
+    146
+  ],
+  "click_type": "positive, auto-placed on under-segmented region",
+  "iou_before": 0.1703487029481949,
+  "iou_after": 0.9318689501116902,
+  "delta": 0.7615202471634953
+}
