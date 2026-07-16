@@ -68,3 +68,10 @@ pip install -e external/sam3 einops "transformers>=5.13" kernels
 SAM 3 checkpoints are gated; request access on Hugging Face and authenticate before running. Model inference requires a GPU (~8 GB VRAM). SAM 3 pins `numpy<2`, which constrains OpenCV and SciPy versions.
 
 ## Repository structure
+```
+src/sam3_seg/    installable package: data, models, evaluation, refinement
+scripts/         CLI entry points for tracking, evaluation, and ablation
+tests/           unit tests for the mask decoder and metrics
+configs/         configuration files
+docs/            result figures
+```
